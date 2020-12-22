@@ -26,4 +26,11 @@ def pop_with_args(array)
   
 end
   
-  
+  describe "using_pop" do
+  before(:each) do 
+    @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
+    @deleted_string = using_pop(@continents)
+  end
+  it "takes in argument of an array and uses the pop method to remove the last element from the array and return that element" do 
+    expect(@deleted_string).to eq("Antarctica")
+  end
