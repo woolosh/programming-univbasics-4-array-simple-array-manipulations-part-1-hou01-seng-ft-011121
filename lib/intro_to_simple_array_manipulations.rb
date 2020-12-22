@@ -23,7 +23,7 @@ end
 def pop_with_args(array)
   
     @dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
-    return @small_dogs = @dog_breeds.pop
+    @small_dogs = @dog_breeds.pop[2]
     
 end
   
